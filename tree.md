@@ -50,7 +50,6 @@
 │   └── utils
 │       ├── constant.ts
 │       ├── model.ts
-│       ├── timer.ts
 │       └── util.ts
 ├── tree.md
 └── tsconfig.json
