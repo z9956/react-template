@@ -1,0 +1,7 @@
+@import '~@/static/css/normalize.css';
+
+html {
+  font-size: calc(100vw / 3.75);
+  font-size: -moz-calc(100vw / 3.75);
+  font-size: -webkit-calc(100vw / 3.75);
+}
