@@ -82,6 +82,11 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js"
   },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -155,7 +160,10 @@
   "devDependencies": {
     "@babel/plugin-proposal-nullish-coalescing-operator": "^7.12.1",
     "@babel/plugin-proposal-optional-chaining": "^7.12.7",
+    "@commitlint/cli": "^11.0.0",
+    "@commitlint/config-conventional": "^11.0.0",
     "@types/react-router-dom": "^5.1.7",
-    "babel-plugin-transform-remove-console": "^6.9.4"
+    "babel-plugin-transform-remove-console": "^6.9.4",
+    "husky": "^4.3.8"
   }
 }
