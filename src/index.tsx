@@ -1,18 +1,15 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom';
+import { configure } from 'mobx';
+
 import reportWebVitals from './reportWebVitals';
-import App from './App';
+import App from '@/pages/App';
 import './index.css';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// 严格模式，所有observe的数据只能通过action修改
+configure({ enforceActions: 'observed' });
+
+ReactDOM.render(<App />, document.getElementById('root'));
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
