@@ -1,9 +1,11 @@
 {
 	"extends": "react-app",
 	"plugins": ["react", "react-hooks"],
+	"parser": "@typescript-eslint/parser",
 	"rules": {
 		"react-hooks/rules-of-hooks": "error",
 		"react-hooks/exhaustive-deps": "warn",
-		"no-unused-vars": ["error", { "args": "none", "ignoreRestSiblings": true }]
+		"no-unused-vars": "off",
+		"@typescript-eslint/no-unused-vars": ["error", { "args": "none", "ignoreRestSiblings": true }]
 	}
 }
