@@ -74,13 +74,8 @@
 	"scripts": {
 		"start": "node scripts/start.js",
 		"build": "node scripts/build.js",
-		"test": "node scripts/test.js"
-	},
-	"husky": {
-		"hooks": {
-			"commit-msg": "commitlint -E HUSKY_GIT_PARAMS",
-			"pre-commit": "pretty-quick --staged"
-		}
+		"test": "node scripts/test.js",
+		"prepare": "husky install"
 	},
 	"browserslist": {
 		"production": [
@@ -155,7 +150,7 @@
 		"babel-plugin-transform-remove-console": "^6.9.4",
 		"eslint-config-prettier": "^8.1.0",
 		"eslint-plugin-react-hooks": "^4.2.0",
-		"husky": "^4.3.8",
+		"husky": "^6.0.0",
 		"prettier": "^2.3.0",
 		"pretty-quick": "^3.1.0"
 	}
