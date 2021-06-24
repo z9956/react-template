@@ -1,5 +1,3 @@
-### 配置基于 [create-react-app](https://github.com/facebook/create-react-app)
- 
 > 语法支持
 
 1.可选链操作符、空值合并操作符[MDN 文档](https://developer.mozilla.org/zh-CN/docs/Web/JavaScript/Reference/Operators/%E5%8F%AF%E9%80%89%E9%93%BE)
