@@ -1,11 +1,8 @@
 /**
- * 文本框默认选中value
- * @param { Event } e
+ * 获取类型
+ * @param { unknown } value
  * */
-export const selectedContent = (e: { target: { select: () => void }; }) => {
-  try {
-    e.target.select();
-  } catch (e) {
-    console.error(e);
-  }
+
+export const getType = (value: unknown) => {
+	return Object.prototype.toString.call(value).slice(8, -1).toLowerCase();
 };
